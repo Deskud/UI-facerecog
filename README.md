@@ -7,5 +7,6 @@ pip install numpy
 pip install pillow
 pip install -U thread
 pip install mysql-connector-python
+pip install CustomTkinterMessagebox
 
 ----------------------------------
