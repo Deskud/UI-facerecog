@@ -10,3 +10,4 @@ pip install mysql-connector-python
 pip install CustomTkinterMessagebox
 
 ----------------------------------
+Open XAMPP then add the databse in the DB folder
