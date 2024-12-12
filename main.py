@@ -10,6 +10,15 @@ import mysql.connector
 from CustomTkinterMessagebox import CTkMessagebox
 
 
+
+#References:
+# Indians =  Various youtubers but this is the main https://www.youtube.com/watch?v=oDaZrqJ2zoo&list=PLiWNvnK7PSPGPDmrdo3jhi_7hvkGrkFlN&index=2 /https://www.youtube.com/watch?v=mkAx_81Pcww&list=PLyDH8KT4GrNd7KMFIgHuxpcklUJyfk_ov
+# Tkinter/CustomTkitner = Various youtuber but this guy is the best => https://www.youtube.com/watch?v=Y01r643ckfI&list=PLfZw_tZWahjxJl81b1S-vYQwHs_9ZT77f
+# optimization/running the app better = GPT suggestions/ Yung sa threading
+
+
+
+
 mydb = mysql.connector.connect(
     host="localhost", user="root", password="", database="dsp_proj"
 )
@@ -72,7 +81,7 @@ def startCamera():
         return face_coords
 
     def face_recognize(img, clf, faceFront):
-        face_coords = img_boundary(img, faceFront, 1.1, 15, (0, 255, 0), "Face", clf)
+        face_coords = img_boundary(img, faceFront, 1.1, 15, (0, 255, 0), "Face", clf) #Parameters: img, classifier, scaleFactor, minNeighbors, color, text, clf
         return img
 
     faceFront = cv.CascadeClassifier(
@@ -101,9 +110,9 @@ def startCamera():
 # Start Register faces
 def collectImage():
     if (
-        nameInput.get() is "" or courseInput.get() is "" or courseInput.get() is ""
+        not nameInput.get() or not idInput.get() or not  courseInput.get()
     ):  # Pag blank yung text input lalabas ng warning notif
-        CTkMessagebox.messagebox(title='Alert!', text='Please complete the form!', sound='on', button_text='bruh',size='220x150')
+        CTkMessagebox.messagebox(title='Alert!', text='Please complete the form!', sound='on', button_text='bruh',size='220x150') #literal na popup notif lang
     else:
         mycursor = mydb.cursor()
         mycursor.execute("SELECT * from student_record")
@@ -201,7 +210,7 @@ def threadingCamera():
 root = customtkinter.CTk()
 root.title("Face Recognition:DSP Project")
 root.geometry("800x500")
-
+root.resizable(False, False)
 # Tabs
 tabs = customtkinter.CTkTabview(root,
     width=400,
