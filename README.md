@@ -8,3 +8,4 @@ pip install pillow
 pip install -U thread
 pip install mysql-connector-python
 
+----------------------------------
