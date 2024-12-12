@@ -174,6 +174,8 @@ def collectImage():
         mycursor.close()
         cap.release()
         cv.destroyAllWindows()
+        CTkMessagebox.messagebox(title='Success!', text='Collection Complete!', sound='on', button_text='OK',size='220x150') #literal na popup notif lang
+
         # End Register Faces
 def trainData():
     dataset_dir = os.path.join(os.getcwd(), "dataset") #Para di na hardcoded yung file directory ng folder (thank you gpt)
