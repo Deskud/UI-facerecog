@@ -12,7 +12,7 @@ from CustomTkinterMessagebox import CTkMessagebox
 
 
 #References:
-# Indians =  Various youtubers but this is the main https://www.youtube.com/watch?v=oDaZrqJ2zoo&list=PLiWNvnK7PSPGPDmrdo3jhi_7hvkGrkFlN&index=2 /https://www.youtube.com/watch?v=mkAx_81Pcww&list=PLyDH8KT4GrNd7KMFIgHuxpcklUJyfk_ov
+# Various youtubers but this is the main https://www.youtube.com/watch?v=oDaZrqJ2zoo&list=PLiWNvnK7PSPGPDmrdo3jhi_7hvkGrkFlN&index=2 /https://www.youtube.com/watch?v=mkAx_81Pcww&list=PLyDH8KT4GrNd7KMFIgHuxpcklUJyfk_ov
 # Tkinter/CustomTkitner = Various youtuber but this guy is the best => https://www.youtube.com/watch?v=Y01r643ckfI&list=PLfZw_tZWahjxJl81b1S-vYQwHs_9ZT77f
 # optimization/running the app better = GPT suggestions/ Yung sa threading
 
